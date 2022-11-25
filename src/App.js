@@ -3,6 +3,7 @@ import PortfolioContainer from './components/PortfolioContainer';
 import Footer from './components/Footer'
 import './App.css';
 
+
 function App() {
 
 
@@ -10,9 +11,10 @@ function App() {
     <>
     <PortfolioContainer />
     <Footer />
-
     </>
+    
      );
+     
 }
 
 export default App;

@@ -13,7 +13,7 @@ function Nav({ currentPage, handlePageChange }) {
     return (
         <div>
         <header>
-            <h1>Brayden's Portfolio</h1>
+            <h1><a id="home" href="#home" onClick={() => handlePageChange('Home')}><span> Brayden's Portfolio</span></a></h1>
             <nav>
                 <ul>
                     <li>
