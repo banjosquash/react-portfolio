@@ -1,28 +1,40 @@
 import React from "react";
 
-function Nav() {
+function Nav({ currentPage, handlePageChange }) {
+
+    // const {
+    //     contactSelected,
+    //     setContactSelected,
+    //     portfolioSelected,
+    //     setPortfolioSelected
+    // } = props;
 
 
     return (
+        <div>
         <header>
             <h1>Brayden's Portfolio</h1>
             <nav>
                 <ul>
                     <li>
-                        <a href="#about-me">About Me</a>
+                        <a data-testid="about" href="#about-me" onClick={() => handlePageChange('About')} className={currentPage}>About Me</a>
                     </li>
                     <li>
-                        <a href="#portfolio">My Portfolio</a>
+                        <a href="#portfolio" onClick={() => handlePageChange('Portfolio')} className={currentPage}>My Work</a>
                     </li>
                     <li>
-                        <a href="#contact-section">Contact Me</a>
+                        <a data-testid='contact' onClick={() => handlePageChange('Contact')} href='#contact-form' className={currentPage}>Contact Me</a>
                     </li>
                     <li>
-                        <a href="#resume">My Resume</a>
+                        <a href="#resume" onClick={() => handlePageChange('Resume')} className={currentPage}>My Resume</a>
                     </li>
                 </ul>
             </nav>
         </header>
+        <section className="hero">
+          <h2 className="hero-title">Brayden McMahan</h2>
+        </section>
+        </div>
     );
 }
 

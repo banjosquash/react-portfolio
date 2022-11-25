@@ -1,17 +1,18 @@
-import Nav from '../src/components/Nav'
-import About from './components/About';
+import React from 'react';
+import PortfolioContainer from './components/PortfolioContainer';
+import Footer from './components/Footer'
 import './App.css';
 
 function App() {
+
+
   return (
-    <div>
-      <Nav></Nav>
-    
-    <main>
-      <About></About>
-    </main>
-    </div>
-  );
+    <>
+    <PortfolioContainer />
+    <Footer />
+
+    </>
+     );
 }
 
 export default App;

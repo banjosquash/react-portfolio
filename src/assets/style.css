@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: rgb(34, 26, 26);
+    --light: rgb(240, 248, 255);
+    --main: rgb(234, 236, 238);
+}
+
+body {
+    background-color: azure;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* header styling */
+header {
+    width: 100%;
+    padding: 20px 20px;
+    background-color: var(--dark);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header h1 {
+    color: var(--light);
+    font-size: 30px;
+    padding: 5px 15px;
+    box-shadow: 1.5px 0 var(--light);
+}
+
+/* nav */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 20px;
+}
+
+nav ul li a {
+    text-decoration: overline;
+    color: var(--main);
+}
+
+/* hero styling */
+.hero {
+    width: 100%;
+    height: 500px;
+    background-image: url('./images/IMG_E0313.JPG');
+    background-size: cover;
+    background-position: center;
+    background-position-y: 35%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hero-title {
+    padding: 15px;
+    color: var(--light);
+    padding-right: 30px;
+    padding-bottom: 20px;
+    background-color: var(--dark);
+}
+
+/* all global subheaders */
+.subheader {
+    flex: 10%;
+    font-size: 30px;
+    padding-left: 20px;
+    border-right: 4px solid var(--dark);
+    text-align: right;
+    padding-right: 7px;
+    justify-items: flex-start;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    justify-items: flex-end;
+    flex: 90%;
+    width: 100%;
+    padding: 30px 40px;
+    padding-left: 15px;
+}
+
+/* about me section */
+.about-me {
+    flex: 80%;
+    padding-left: 20px;
+}
+
+/* work section */
+.grid-work-container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, fr);
+   height: 80vh;
+   flex: 80%;
+   padding: 0 30px;
+   grid-gap: 10px;
+
+}
+
+.grid-item {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border:5px solid var(--light);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background: cover;
+}
+/* work titles */
+h3 {
+    background-color: var(--dark);
+    text-decoration: none;
+    color: var(--light);
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+}
+.work-1 {
+    background-image: url('./images/2022-11-08.png');
+}
+
+.work-2 {
+    background-image: url('./images/2022-11-08\ \(1\).png');
+}
+
+.work-3 {
+    background-image: url('./images/code-quiz.png');
+}
+
+.work-4 {
+    background-image: url('./images/note-taker.png');
+    
+}
+.work-5 {
+    background-image: url('./images/Mountain_Faith_Band.webp');
+    background-position-y: 35%;
+    
+}
+
+/* contact me section */
+.info {
+    display: flex;
+    flex: 80%;
+    padding: 40px;
+    justify-content: space-around;
+}
+
+.info div {
+    border-bottom: 5px solid var(--dark);
+}
+
+.info div a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+/* media queries */
+@media screen and (max-width: 980px) {
+    .content {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .subheader {
+        text-align:center ;
+        border-right: 0px;
+        border-bottom: 2px solid var(--dark);
+        margin: 20px; 
+        padding-bottom: 5px;  
+    }
+
+    .info {
+        padding-top: 20px;
+    }
+
+    .subheader br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    .grid-work-container {
+        height: 60vh;
+        justify-content: center;
+    }
+
+    .grid-item h3 {
+        font-size: 15px;
+    }
+
+    .info {
+        flex-wrap: wrap;
+    }
+
+    .subheader {
+        font-size: 30px;
+    }
+
+    .content {
+       padding: 10px; 
+    }
+
+    .content div {
+        padding: 2px; 
+        font-size: 13px;
+    }
+} 
+
+@media screen and (max-width: 575px) {
+    .grid-work-container{
+        height: 50vh;
+        justify-content: center;
+    }
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info div {
+        padding: 5px 10px;
+        margin: 5px 5px 2px 5px;
+        font-weight: bolder;
+    }
+
+    .info div:hover {
+        font-size: 18px;
+    } 
+
+    header h1 {
+        box-shadow: none;
+    }
+}
+
