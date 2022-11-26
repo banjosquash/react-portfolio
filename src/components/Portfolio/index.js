@@ -39,6 +39,12 @@ function Portfolio(){
         </a>
       </div> 
 
+      <div className="grid-item work-4">
+        <a href="https://arcane-hollows-49205.herokuapp.com/">
+          <h3>Note Taker <br></br><span>HTML/CSS/Javascript/Express</span></h3>
+        </a>
+      </div>
+
     </div>
   </section>
 
