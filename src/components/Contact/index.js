@@ -39,10 +39,12 @@ function Contact(){
             <form id='contact-form' onSubmit={handleSubmit}>
             <div>
                 <label htmlFor='name'>Name: </label>
+                <br></br>
                 <input type='text' defaultValue={name} onBlur={handleForm} name='name' />
             </div>
             <div>
                 <label htmlFor='email'>Email address: </label>
+                <br></br>
                 <input type='email' name='email' defaultValue={email} onBlur={handleForm}/>
             </div>
             <div>
