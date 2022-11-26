@@ -39,7 +39,7 @@ header h1 {
   color: var(--light);
 }
 #home:hover:before{
-  content: "Tic-Tac-Toe???"
+  content: "Tic-Tac-Toe"
 }
 #home:hover span {
   display: none;
@@ -129,7 +129,7 @@ nav ul li a {
   justify-content: flex-start;
   align-items: flex-end;
   background: cover;
-} */
+} 
 /* work titles */
  h3 {
   background-color: var(--dark);
@@ -141,6 +141,7 @@ nav ul li a {
   padding-left: 10px;
 
 } 
+
 .work-1 {
   background-image: url('./assets/images/2022-11-08.png');
 }
@@ -163,10 +164,17 @@ nav ul li a {
   
 } */ */
 
+/* RESUME */
+#resume {
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
 /* footer */
 #contact-section {
   width: 100%;
-  padding: 20px 20px;
+  padding: 0px 0px;
   background-color: var(--dark);
   display: flex;
   flex-wrap: wrap;
@@ -174,8 +182,8 @@ nav ul li a {
   justify-content: space-around;
 }
 
-#contact-section a {
-  color: var(--dark);
+#contact-section a  {
+  color: var(--light);
   font-size: 30px;
   padding: 5px 15px;
  
@@ -183,9 +191,10 @@ nav ul li a {
 
 
 .info {
+  color: var(--light);
   display: flex;
   flex: 80%;
-  padding: 40px;
+  padding: 10px;
   justify-content: space-around;
 }
 
@@ -195,7 +204,7 @@ nav ul li a {
 
 .info div a {
   text-decoration: none;
-  color: var(--dark);
+  color: var(--light);
 }
 
 /* contact form */

@@ -1,15 +1,6 @@
 import React from "react";
-
+// bringing in props from portfoliioContainer to render the current page 
 function Nav({ currentPage, handlePageChange }) {
-
-    // const {
-    //     contactSelected,
-    //     setContactSelected,
-    //     portfolioSelected,
-    //     setPortfolioSelected
-    // } = props;
-
-
     return (
         <div>
         <header>

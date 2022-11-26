@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
+import Resume from './Resume';
 import Nav from './Nav';
 import About from './About'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
-import Home from './Home';
+
 import { Board } from './Board';
 
-
+// container to conditionally render pages
  function PortfolioContainer(){
     const [currentPage, setCurrentPage] = useState('Nav');
-
+// tic tac to variables and functions
     const [board, setboard] = useState(Array(9).fill(null))
     const [xPlaying, setXPlaying] = useState(true);
     const [gameOver, setGameOver] = useState(false)
@@ -55,7 +56,7 @@ import { Board } from './Board';
         setboard(Array(9).fill(null))
     }
 
-
+//  conditional rendering 
     const renderPage =()=>{
         if(currentPage === 'Home'){
              return <Board board={board} onClick={gameOver? resetBoard : handleBoxClick}/>    
@@ -69,7 +70,11 @@ import { Board } from './Board';
         if(currentPage === 'Contact'){
             return <Contact />
         }
+        if(currentPage === 'Resume'){
+            return <Resume />
+        }
     };
+    // use state to set current page on click
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
