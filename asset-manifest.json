@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.23331e5e.css",
+    "main.js": "/react-portfolio/static/js/main.1907c2f3.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/2022-11-08 (1).png": "/react-portfolio/static/media/2022-11-08 (1).1a7083fe6ad285f52073.png",
+    "static/media/IMG_E0313.JPG": "/react-portfolio/static/media/IMG_E0313.209e2de5fbc6c3f04f82.JPG",
+    "static/media/2022-11-08.png": "/react-portfolio/static/media/2022-11-08.db15aa0226b2d5c27f5c.png",
+    "static/media/Mountain_Faith_Band.webp": "/react-portfolio/static/media/Mountain_Faith_Band.307dbbd2863695eadb2f.webp",
+    "static/media/resume-1.png": "/react-portfolio/static/media/resume-1.64a54d03524c787d13ed.png",
+    "static/media/resume-2.png": "/react-portfolio/static/media/resume-2.7a4bae139bfe9696a6fa.png",
+    "static/media/code-quiz.png": "/react-portfolio/static/media/code-quiz.beb92a44308228a37b78.png",
+    "static/media/note-taker.png": "/react-portfolio/static/media/note-taker.f15c4b9d64ebcda674e9.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.23331e5e.css.map": "/react-portfolio/static/css/main.23331e5e.css.map",
+    "main.1907c2f3.js.map": "/react-portfolio/static/js/main.1907c2f3.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23331e5e.css",
+    "static/js/main.1907c2f3.js"
+  ]
+}
